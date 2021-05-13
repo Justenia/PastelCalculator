@@ -41,11 +41,10 @@ namespace PastelCalculator
             this.six_Btn10 = new System.Windows.Forms.Button();
             this.five_Btn5 = new System.Windows.Forms.Button();
             this.four_Btn12 = new System.Windows.Forms.Button();
-            this.plus_Btn5 = new System.Windows.Forms.Button();
+            this.plusBtn = new System.Windows.Forms.Button();
             this.nine_BTn6 = new System.Windows.Forms.Button();
             this.eight_Btn7 = new System.Windows.Forms.Button();
             this.seven_Btn8 = new System.Windows.Forms.Button();
-            this.SignButton4 = new System.Windows.Forms.Button();
             this.C_Btn3 = new System.Windows.Forms.Button();
             this.CE_Btn2 = new System.Windows.Forms.Button();
             this.Back_Btn1 = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@ namespace PastelCalculator
             // 
             this.divide_Btn17.BackColor = System.Drawing.Color.PeachPuff;
             this.divide_Btn17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.divide_Btn17.Location = new System.Drawing.Point(272, 369);
+            this.divide_Btn17.Location = new System.Drawing.Point(273, 293);
             this.divide_Btn17.Name = "divide_Btn17";
             this.divide_Btn17.Size = new System.Drawing.Size(78, 70);
             this.divide_Btn17.TabIndex = 62;
@@ -69,7 +68,7 @@ namespace PastelCalculator
             this.equals_Btn18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equals_Btn18.Location = new System.Drawing.Point(188, 369);
             this.equals_Btn18.Name = "equals_Btn18";
-            this.equals_Btn18.Size = new System.Drawing.Size(78, 70);
+            this.equals_Btn18.Size = new System.Drawing.Size(163, 70);
             this.equals_Btn18.TabIndex = 61;
             this.equals_Btn18.Text = "=";
             this.equals_Btn18.UseVisualStyleBackColor = false;
@@ -100,7 +99,7 @@ namespace PastelCalculator
             // 
             this.times_Btn13.BackColor = System.Drawing.Color.PeachPuff;
             this.times_Btn13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.times_Btn13.Location = new System.Drawing.Point(273, 293);
+            this.times_Btn13.Location = new System.Drawing.Point(274, 217);
             this.times_Btn13.Name = "times_Btn13";
             this.times_Btn13.Size = new System.Drawing.Size(78, 70);
             this.times_Btn13.TabIndex = 58;
@@ -144,7 +143,7 @@ namespace PastelCalculator
             // 
             this.minus_Btn9.BackColor = System.Drawing.Color.PeachPuff;
             this.minus_Btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minus_Btn9.Location = new System.Drawing.Point(272, 217);
+            this.minus_Btn9.Location = new System.Drawing.Point(273, 140);
             this.minus_Btn9.Name = "minus_Btn9";
             this.minus_Btn9.Size = new System.Drawing.Size(78, 70);
             this.minus_Btn9.TabIndex = 54;
@@ -184,16 +183,16 @@ namespace PastelCalculator
             this.four_Btn12.Text = "4";
             this.four_Btn12.UseVisualStyleBackColor = false;
             // 
-            // plus_Btn5
+            // plusBtn
             // 
-            this.plus_Btn5.BackColor = System.Drawing.Color.PeachPuff;
-            this.plus_Btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plus_Btn5.Location = new System.Drawing.Point(272, 140);
-            this.plus_Btn5.Name = "plus_Btn5";
-            this.plus_Btn5.Size = new System.Drawing.Size(78, 70);
-            this.plus_Btn5.TabIndex = 50;
-            this.plus_Btn5.Text = "+";
-            this.plus_Btn5.UseVisualStyleBackColor = false;
+            this.plusBtn.BackColor = System.Drawing.Color.PeachPuff;
+            this.plusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusBtn.Location = new System.Drawing.Point(273, 65);
+            this.plusBtn.Name = "plusBtn";
+            this.plusBtn.Size = new System.Drawing.Size(78, 70);
+            this.plusBtn.TabIndex = 50;
+            this.plusBtn.Text = "+";
+            this.plusBtn.UseVisualStyleBackColor = false;
             // 
             // nine_BTn6
             // 
@@ -227,17 +226,6 @@ namespace PastelCalculator
             this.seven_Btn8.TabIndex = 47;
             this.seven_Btn8.Text = "7";
             this.seven_Btn8.UseVisualStyleBackColor = false;
-            // 
-            // SignButton4
-            // 
-            this.SignButton4.BackColor = System.Drawing.Color.PeachPuff;
-            this.SignButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignButton4.Location = new System.Drawing.Point(272, 65);
-            this.SignButton4.Name = "SignButton4";
-            this.SignButton4.Size = new System.Drawing.Size(78, 70);
-            this.SignButton4.TabIndex = 46;
-            this.SignButton4.Text = "±";
-            this.SignButton4.UseVisualStyleBackColor = false;
             // 
             // C_Btn3
             // 
@@ -300,11 +288,10 @@ namespace PastelCalculator
             this.Controls.Add(this.six_Btn10);
             this.Controls.Add(this.five_Btn5);
             this.Controls.Add(this.four_Btn12);
-            this.Controls.Add(this.plus_Btn5);
+            this.Controls.Add(this.plusBtn);
             this.Controls.Add(this.nine_BTn6);
             this.Controls.Add(this.eight_Btn7);
             this.Controls.Add(this.seven_Btn8);
-            this.Controls.Add(this.SignButton4);
             this.Controls.Add(this.C_Btn3);
             this.Controls.Add(this.CE_Btn2);
             this.Controls.Add(this.Back_Btn1);
@@ -330,11 +317,10 @@ namespace PastelCalculator
         private System.Windows.Forms.Button six_Btn10;
         private System.Windows.Forms.Button five_Btn5;
         private System.Windows.Forms.Button four_Btn12;
-        private System.Windows.Forms.Button plus_Btn5;
+        private System.Windows.Forms.Button plusBtn;
         private System.Windows.Forms.Button nine_BTn6;
         private System.Windows.Forms.Button eight_Btn7;
         private System.Windows.Forms.Button seven_Btn8;
-        private System.Windows.Forms.Button SignButton4;
         private System.Windows.Forms.Button C_Btn3;
         private System.Windows.Forms.Button CE_Btn2;
         private System.Windows.Forms.Button Back_Btn1;
