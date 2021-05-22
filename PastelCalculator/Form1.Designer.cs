@@ -138,6 +138,7 @@ namespace PastelCalculator
             this.one_Button.TabIndex = 55;
             this.one_Button.Text = "1";
             this.one_Button.UseVisualStyleBackColor = false;
+            this.one_Button.Click += new System.EventHandler(this.one_Button_Click);
             // 
             // subtract_Button
             // 

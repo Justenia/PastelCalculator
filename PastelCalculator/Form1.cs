@@ -16,5 +16,10 @@ namespace PastelCalculator
         {
             InitializeComponent();
         }
+
+        private void one_Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
