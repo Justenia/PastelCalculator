@@ -115,7 +115,7 @@ namespace PastelCalculator
             // 
             this.Button_three.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Button_three.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_three.Location = new System.Drawing.Point(189, 293);
+            this.Button_three.Location = new System.Drawing.Point(188, 295);
             this.Button_three.Name = "Button_three";
             this.Button_three.Size = new System.Drawing.Size(78, 70);
             this.Button_three.TabIndex = 57;
@@ -316,6 +316,7 @@ namespace PastelCalculator
             this.Controls.Add(this.Button_clearEntry);
             this.Controls.Add(this.Button_delete);
             this.Controls.Add(this.TextBox_Result);
+            this.MaximizeBox = false;
             this.Name = "Form1_calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);
