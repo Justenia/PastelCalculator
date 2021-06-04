@@ -99,12 +99,12 @@ namespace PastelCalculator
 
         private void Button_clearEntry_Click(object sender, EventArgs e)
         {
-
+            TextBox_Result.Text = "0";
         }
 
         private void Button_clear_Click(object sender, EventArgs e)
         {
-
+            TextBox_Result.Clear();
         }
 
         private void Button_dot_Click(object sender, EventArgs e)
