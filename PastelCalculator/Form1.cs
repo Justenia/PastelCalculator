@@ -44,7 +44,14 @@ namespace PastelCalculator
 
         private void Button_delete_Click(object sender, EventArgs e)
         {
-
+            if (TextBox_Result.Text.Length > 0)
+            {
+                TextBox_Result.Text = TextBox_Result.Text.Remove(TextBox_Result.Text.Length - 1, 1);
+            }
+            if (TextBox_Result.Text == "")
+            {
+                TextBox_Result.Text = "0";
+            }
         }
 
         private void Button_clearEntry_Click(object sender, EventArgs e)
@@ -64,19 +71,19 @@ namespace PastelCalculator
 
         private void BtnNumericValues(object sender, EventArgs e)
         {
-            Button a = (Button)sender;
+            Button button = (Button)sender;
 
             if (TextBox_Result.Text == "0")
                 TextBox_Result.Text = "";
 
-            if (a.Text == ".")
+            if (button.Text == ".")
             {
                 if (!TextBox_Result.Text.Contains("."))
-                    TextBox_Result.Text = TextBox_Result.Text + a.Text;
+                    TextBox_Result.Text = TextBox_Result.Text + button.Text;
             }
             else
             {
-                TextBox_Result.Text = TextBox_Result.Text + a.Text;
+                TextBox_Result.Text = TextBox_Result.Text + button.Text;
             }
         }
     }
