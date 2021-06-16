@@ -85,7 +85,7 @@ namespace PastelCalculator
             this.Button_dot.TabIndex = 60;
             this.Button_dot.Text = ".";
             this.Button_dot.UseVisualStyleBackColor = false;
-            this.Button_dot.Click += new System.EventHandler(this.Button_dot_Click);
+            this.Button_dot.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_zero
             // 
@@ -97,7 +97,7 @@ namespace PastelCalculator
             this.Button_zero.TabIndex = 59;
             this.Button_zero.Text = "0";
             this.Button_zero.UseVisualStyleBackColor = false;
-            this.Button_zero.Click += new System.EventHandler(this.Button_zero_Click);
+            this.Button_zero.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_multiply
             // 
@@ -121,7 +121,7 @@ namespace PastelCalculator
             this.Button_three.TabIndex = 57;
             this.Button_three.Text = "3";
             this.Button_three.UseVisualStyleBackColor = false;
-            this.Button_three.Click += new System.EventHandler(this.Button_three_Click);
+            this.Button_three.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_two
             // 
@@ -133,7 +133,7 @@ namespace PastelCalculator
             this.Button_two.TabIndex = 56;
             this.Button_two.Text = "2";
             this.Button_two.UseVisualStyleBackColor = false;
-            this.Button_two.Click += new System.EventHandler(this.Button_two_Click);
+            this.Button_two.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_one
             // 
@@ -145,7 +145,7 @@ namespace PastelCalculator
             this.Button_one.TabIndex = 55;
             this.Button_one.Text = "1";
             this.Button_one.UseVisualStyleBackColor = false;
-            this.Button_one.Click += new System.EventHandler(this.Button_one_Click);
+            this.Button_one.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_subtract
             // 
@@ -169,7 +169,7 @@ namespace PastelCalculator
             this.Button_six.TabIndex = 53;
             this.Button_six.Text = "6";
             this.Button_six.UseVisualStyleBackColor = false;
-            this.Button_six.Click += new System.EventHandler(this.Button_six_Click);
+            this.Button_six.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_five
             // 
@@ -181,7 +181,7 @@ namespace PastelCalculator
             this.Button_five.TabIndex = 52;
             this.Button_five.Text = "5";
             this.Button_five.UseVisualStyleBackColor = false;
-            this.Button_five.Click += new System.EventHandler(this.Button_five_Click);
+            this.Button_five.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_four
             // 
@@ -193,7 +193,7 @@ namespace PastelCalculator
             this.Button_four.TabIndex = 51;
             this.Button_four.Text = "4";
             this.Button_four.UseVisualStyleBackColor = false;
-            this.Button_four.Click += new System.EventHandler(this.Button_four_Click);
+            this.Button_four.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_add
             // 
@@ -217,7 +217,7 @@ namespace PastelCalculator
             this.Button_nine.TabIndex = 49;
             this.Button_nine.Text = "9";
             this.Button_nine.UseVisualStyleBackColor = false;
-            this.Button_nine.Click += new System.EventHandler(this.Button_nine_Click);
+            this.Button_nine.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_eight
             // 
@@ -229,7 +229,7 @@ namespace PastelCalculator
             this.Button_eight.TabIndex = 48;
             this.Button_eight.Text = "8";
             this.Button_eight.UseVisualStyleBackColor = false;
-            this.Button_eight.Click += new System.EventHandler(this.Button_eight_Click);
+            this.Button_eight.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_seven
             // 
@@ -241,7 +241,7 @@ namespace PastelCalculator
             this.Button_seven.TabIndex = 47;
             this.Button_seven.Text = "7";
             this.Button_seven.UseVisualStyleBackColor = false;
-            this.Button_seven.Click += new System.EventHandler(this.Button_seven_Click);
+            this.Button_seven.Click += new System.EventHandler(this.BtnNumericValues);
             // 
             // Button_clear
             // 
