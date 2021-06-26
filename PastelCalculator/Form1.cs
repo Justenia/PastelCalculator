@@ -12,6 +12,9 @@ namespace PastelCalculator
 {
     public partial class Form1_calculator : Form
     {
+        String operation = "";
+        Double value = 0;
+
         public Form1_calculator()
         {
             InitializeComponent();
@@ -69,7 +72,10 @@ namespace PastelCalculator
 
         private void Button_Operation(object sender, EventArgs e)
         {
-
+            Button button = (Button)sender;
+            value = Double.Parse(TextBox_Result.Text);
+            operation = button.Text;
+            TextBox_Result.Text = "";
         }
     }
 }
