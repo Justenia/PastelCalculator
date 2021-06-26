@@ -61,7 +61,7 @@ namespace PastelCalculator
             this.Button_divide.TabIndex = 62;
             this.Button_divide.Text = "/";
             this.Button_divide.UseVisualStyleBackColor = false;
-            this.Button_divide.Click += new System.EventHandler(this.Button_divide_Click);
+            this.Button_divide.Click += new System.EventHandler(this.Button_Operation);
             // 
             // Button_equals
             // 
@@ -109,7 +109,7 @@ namespace PastelCalculator
             this.Button_multiply.TabIndex = 58;
             this.Button_multiply.Text = "*";
             this.Button_multiply.UseVisualStyleBackColor = false;
-            this.Button_multiply.Click += new System.EventHandler(this.Button_multiply_Click);
+            this.Button_multiply.Click += new System.EventHandler(this.Button_Operation);
             // 
             // Button_three
             // 
@@ -157,7 +157,7 @@ namespace PastelCalculator
             this.Button_subtract.TabIndex = 54;
             this.Button_subtract.Text = "-";
             this.Button_subtract.UseVisualStyleBackColor = false;
-            this.Button_subtract.Click += new System.EventHandler(this.Button_subtract_Click);
+            this.Button_subtract.Click += new System.EventHandler(this.Button_Operation);
             // 
             // Button_six
             // 
@@ -205,7 +205,7 @@ namespace PastelCalculator
             this.Button_add.TabIndex = 50;
             this.Button_add.Text = "+";
             this.Button_add.UseVisualStyleBackColor = false;
-            this.Button_add.Click += new System.EventHandler(this.Button_add_Click);
+            this.Button_add.Click += new System.EventHandler(this.Button_Operation);
             // 
             // Button_nine
             // 

@@ -17,26 +17,6 @@ namespace PastelCalculator
             InitializeComponent();
         }
 
-        private void Button_add_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button_subtract_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button_multiply_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button_divide_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button_equals_Click(object sender, EventArgs e)
         {
 
@@ -85,6 +65,11 @@ namespace PastelCalculator
             {
                 TextBox_Result.Text = TextBox_Result.Text + button.Text;
             }
+        }
+
+        private void Button_Operation(object sender, EventArgs e)
+        {
+
         }
     }
 }
