@@ -288,7 +288,6 @@ namespace PastelCalculator
             this.TextBox_Result.Name = "TextBox_Result";
             this.TextBox_Result.Size = new System.Drawing.Size(331, 49);
             this.TextBox_Result.TabIndex = 42;
-            this.TextBox_Result.TextChanged += new System.EventHandler(this.TextBox_Result_TextChanged);
             // 
             // Form1_calculator
             // 

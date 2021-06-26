@@ -64,11 +64,6 @@ namespace PastelCalculator
             TextBox_Result.Clear();
         }
 
-        private void TextBox_Result_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnNumericValues(object sender, EventArgs e)
         {
             Button button = (Button)sender;
