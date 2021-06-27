@@ -289,6 +289,7 @@ namespace PastelCalculator
             this.TextBox_Result.Name = "TextBox_Result";
             this.TextBox_Result.Size = new System.Drawing.Size(331, 49);
             this.TextBox_Result.TabIndex = 42;
+            this.TextBox_Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbl_equation
             // 
@@ -296,7 +297,7 @@ namespace PastelCalculator
             this.lbl_equation.BackColor = System.Drawing.Color.FloralWhite;
             this.lbl_equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbl_equation.Location = new System.Drawing.Point(258, 25);
+            this.lbl_equation.Location = new System.Drawing.Point(22, 21);
             this.lbl_equation.Name = "lbl_equation";
             this.lbl_equation.Size = new System.Drawing.Size(0, 29);
             this.lbl_equation.TabIndex = 63;
