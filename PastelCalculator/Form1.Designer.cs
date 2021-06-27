@@ -293,12 +293,12 @@ namespace PastelCalculator
             // lbl_equation
             // 
             this.lbl_equation.AutoSize = true;
-            this.lbl_equation.BackColor = System.Drawing.SystemColors.Window;
-            this.lbl_equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_equation.BackColor = System.Drawing.Color.FloralWhite;
+            this.lbl_equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_equation.Location = new System.Drawing.Point(258, 25);
             this.lbl_equation.Name = "lbl_equation";
-            this.lbl_equation.Size = new System.Drawing.Size(0, 25);
+            this.lbl_equation.Size = new System.Drawing.Size(0, 29);
             this.lbl_equation.TabIndex = 63;
             // 
             // Form1_calculator
