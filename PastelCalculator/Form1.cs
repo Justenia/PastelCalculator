@@ -22,6 +22,7 @@ namespace PastelCalculator
 
         private void Button_equals_Click(object sender, EventArgs e)
         {
+            lbl_equation.Text = "";
             switch (operation)
             {
                 case "+":
@@ -88,6 +89,7 @@ namespace PastelCalculator
             value = Double.Parse(TextBox_Result.Text);
             operation = button.Text;
             TextBox_Result.Text = "";
+            lbl_equation.Text = value + " " + operation;
         }
     }
 }

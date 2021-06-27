@@ -49,6 +49,7 @@ namespace PastelCalculator
             this.Button_clearEntry = new System.Windows.Forms.Button();
             this.Button_delete = new System.Windows.Forms.Button();
             this.TextBox_Result = new System.Windows.Forms.TextBox();
+            this.lbl_equation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Button_divide
@@ -289,12 +290,24 @@ namespace PastelCalculator
             this.TextBox_Result.Size = new System.Drawing.Size(331, 49);
             this.TextBox_Result.TabIndex = 42;
             // 
+            // lbl_equation
+            // 
+            this.lbl_equation.AutoSize = true;
+            this.lbl_equation.BackColor = System.Drawing.SystemColors.Window;
+            this.lbl_equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbl_equation.Location = new System.Drawing.Point(258, 25);
+            this.lbl_equation.Name = "lbl_equation";
+            this.lbl_equation.Size = new System.Drawing.Size(0, 25);
+            this.lbl_equation.TabIndex = 63;
+            // 
             // Form1_calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PastelCalculator.Properties.Resources._649129;
             this.ClientSize = new System.Drawing.Size(367, 450);
+            this.Controls.Add(this.lbl_equation);
             this.Controls.Add(this.Button_divide);
             this.Controls.Add(this.Button_equals);
             this.Controls.Add(this.Button_dot);
@@ -345,6 +358,7 @@ namespace PastelCalculator
         private System.Windows.Forms.Button Button_clearEntry;
         private System.Windows.Forms.Button Button_delete;
         private System.Windows.Forms.TextBox TextBox_Result;
+        private System.Windows.Forms.Label lbl_equation;
     }
 }
 
