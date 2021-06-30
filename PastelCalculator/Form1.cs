@@ -55,6 +55,7 @@ namespace PastelCalculator
             }
         }
 
+
         private void Button_clearEntry_Click(object sender, EventArgs e)
         {
             TextBox_Result.Text = "0";
