@@ -55,8 +55,6 @@ namespace PastelCalculator
             }
         }
 
-
-
         private void Button_clearEntry_Click(object sender, EventArgs e)
         {
             TextBox_Result.Text = "0";
@@ -65,6 +63,7 @@ namespace PastelCalculator
         private void Button_clear_Click(object sender, EventArgs e)
         {
             TextBox_Result.Clear();
+            lbl_equation.ResetText();
         }
 
         private void BtnNumericValues(object sender, EventArgs e)
