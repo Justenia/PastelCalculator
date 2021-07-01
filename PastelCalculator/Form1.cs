@@ -42,13 +42,12 @@ namespace PastelCalculator
 
         private void Button_clearEntry_Click(object sender, EventArgs e)
         {
-            TextBox_Result.Text = "0";
+            ClearEntry();
         }
 
         private void Button_clear_Click(object sender, EventArgs e)
         {
-            TextBox_Result.Clear();
-            lbl_equation.ResetText();
+            Clear();
         }
 
         private void AppendNumValues(object sender)
@@ -110,6 +109,17 @@ namespace PastelCalculator
             {
                 TextBox_Result.Text = "0";
             }
+        }
+
+        private void ClearEntry()
+        {
+            TextBox_Result.Text = "0";
+        }
+
+        private void Clear()
+        {
+            TextBox_Result.Clear();
+            lbl_equation.ResetText();
         }
     }
 }
