@@ -12,8 +12,7 @@ namespace PastelCalculator
 {
     public partial class Form1_calculator : Form
     {
-        String operation = "";
-        Double value = 0;
+        PastelClass calc = new PastelClass();
 
         public Form1_calculator()
         {
@@ -27,12 +26,15 @@ namespace PastelCalculator
 
         private void Button_Operation(object sender, EventArgs e)
         {
-            Operators(sender);
+            Operation(sender);
         }
 
         private void Button_equals_Click(object sender, EventArgs e)
         {
-            Operation();
+            calc.Value2 = TextBox_Result.Text;
+            lbl_equation.Text = ""; 
+            calc.Operators();
+            TextBox_Result.Text = calc.Value2;
         }
 
         private void Button_delete_Click(object sender, EventArgs e)
@@ -67,35 +69,13 @@ namespace PastelCalculator
             }
         }
 
-        private void Operators(object sender)
+        private void Operation(object sender)
         {
             Button button = (Button)sender;
-            value = Double.Parse(TextBox_Result.Text);
-            operation = button.Text;
+            calc.Value = Double.Parse(TextBox_Result.Text);
+            calc.Operation = button.Text;
             TextBox_Result.Text = "";
-            lbl_equation.Text = value + " " + operation;
-        }
-
-        private void Operation()
-        {
-            lbl_equation.Text = "";
-            switch (operation)
-            {
-                case "+":
-                    TextBox_Result.Text = Convert.ToString(value + Double.Parse(TextBox_Result.Text));
-                    break;
-                case "-":
-                    TextBox_Result.Text = Convert.ToString(value - Double.Parse(TextBox_Result.Text));
-                    break;
-                case "*":
-                    TextBox_Result.Text = Convert.ToString(value * Double.Parse(TextBox_Result.Text));
-                    break;
-                case "/":
-                    TextBox_Result.Text = Convert.ToString(value / Double.Parse(TextBox_Result.Text));
-                    break;
-                default:
-                    break;
-            }
+            lbl_equation.Text = calc.Value + " " + calc.Operation;
         }
 
         private void Backspace()
