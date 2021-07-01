@@ -20,6 +20,33 @@ namespace PastelCalculator
             InitializeComponent();
         }
 
+        private void BtnNumericValues(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+
+            if (TextBox_Result.Text == "0")
+                TextBox_Result.Text = "";
+
+            if (button.Text == ".")
+            {
+                if (!TextBox_Result.Text.Contains("."))
+                    TextBox_Result.Text = TextBox_Result.Text + button.Text;
+            }
+            else
+            {
+                TextBox_Result.Text = TextBox_Result.Text + button.Text;
+            }
+        }
+
+        private void Button_Operation(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            value = Double.Parse(TextBox_Result.Text);
+            operation = button.Text;
+            TextBox_Result.Text = "";
+            lbl_equation.Text = value + " " + operation;
+        }
+
         private void Button_equals_Click(object sender, EventArgs e)
         {
             lbl_equation.Text = "";
@@ -64,33 +91,6 @@ namespace PastelCalculator
         {
             TextBox_Result.Clear();
             lbl_equation.ResetText();
-        }
-
-        private void BtnNumericValues(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-
-            if (TextBox_Result.Text == "0")
-                TextBox_Result.Text = "";
-
-            if (button.Text == ".")
-            {
-                if (!TextBox_Result.Text.Contains("."))
-                    TextBox_Result.Text = TextBox_Result.Text + button.Text;
-            }
-            else
-            {
-                TextBox_Result.Text = TextBox_Result.Text + button.Text;
-            }
-        }
-
-        private void Button_Operation(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            value = Double.Parse(TextBox_Result.Text);
-            operation = button.Text;
-            TextBox_Result.Text = "";
-            lbl_equation.Text = value + " " + operation;
         }
     }
 }
