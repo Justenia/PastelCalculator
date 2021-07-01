@@ -27,46 +27,17 @@ namespace PastelCalculator
 
         private void Button_Operation(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            value = Double.Parse(TextBox_Result.Text);
-            operation = button.Text;
-            TextBox_Result.Text = "";
-            lbl_equation.Text = value + " " + operation;
+            Operators(sender);
         }
 
         private void Button_equals_Click(object sender, EventArgs e)
         {
-            lbl_equation.Text = "";
-            switch (operation)
-            {
-                case "+":
-                    TextBox_Result.Text = Convert.ToString(value + Double.Parse(TextBox_Result.Text));
-                    break;
-                case "-":
-                    TextBox_Result.Text = Convert.ToString(value - Double.Parse(TextBox_Result.Text));
-                    break;
-                case "*":
-                    TextBox_Result.Text = Convert.ToString(value * Double.Parse(TextBox_Result.Text));
-                    break;
-                case "/":
-                    TextBox_Result.Text = Convert.ToString(value / Double.Parse(TextBox_Result.Text));
-                    break;
-                default:
-                    break;
-            }
+            Operation();
         }
 
         private void Button_delete_Click(object sender, EventArgs e)
         {
-            if (TextBox_Result.Text.Length > 0)
-            {
-                TextBox_Result.Text = TextBox_Result.Text.Remove(TextBox_Result.Text.Length - 1, 1);
-            }
-
-            if (TextBox_Result.Text == "")
-            {
-                TextBox_Result.Text = "0";
-            }
+            Backspace();
         }
 
         private void Button_clearEntry_Click(object sender, EventArgs e)
@@ -94,6 +65,50 @@ namespace PastelCalculator
             else
             {
                 TextBox_Result.Text = TextBox_Result.Text + button.Text;
+            }
+        }
+
+        private void Operators(object sender)
+        {
+            Button button = (Button)sender;
+            value = Double.Parse(TextBox_Result.Text);
+            operation = button.Text;
+            TextBox_Result.Text = "";
+            lbl_equation.Text = value + " " + operation;
+        }
+
+        private void Operation()
+        {
+            lbl_equation.Text = "";
+            switch (operation)
+            {
+                case "+":
+                    TextBox_Result.Text = Convert.ToString(value + Double.Parse(TextBox_Result.Text));
+                    break;
+                case "-":
+                    TextBox_Result.Text = Convert.ToString(value - Double.Parse(TextBox_Result.Text));
+                    break;
+                case "*":
+                    TextBox_Result.Text = Convert.ToString(value * Double.Parse(TextBox_Result.Text));
+                    break;
+                case "/":
+                    TextBox_Result.Text = Convert.ToString(value / Double.Parse(TextBox_Result.Text));
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void Backspace()
+        {
+            if (TextBox_Result.Text.Length > 0)
+            {
+                TextBox_Result.Text = TextBox_Result.Text.Remove(TextBox_Result.Text.Length - 1, 1);
+            }
+
+            if (TextBox_Result.Text == "")
+            {
+                TextBox_Result.Text = "0";
             }
         }
     }
