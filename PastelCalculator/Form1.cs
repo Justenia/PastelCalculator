@@ -22,20 +22,7 @@ namespace PastelCalculator
 
         private void BtnNumericValues(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-
-            if (TextBox_Result.Text == "0")
-                TextBox_Result.Text = "";
-
-            if (button.Text == ".")
-            {
-                if (!TextBox_Result.Text.Contains("."))
-                    TextBox_Result.Text = TextBox_Result.Text + button.Text;
-            }
-            else
-            {
-                TextBox_Result.Text = TextBox_Result.Text + button.Text;
-            }
+            AppendNumValues(sender);
         }
 
         private void Button_Operation(object sender, EventArgs e)
@@ -91,6 +78,23 @@ namespace PastelCalculator
         {
             TextBox_Result.Clear();
             lbl_equation.ResetText();
+        }
+
+        private void AppendNumValues(object sender)
+        {
+            Button button = (Button)sender;
+            if (TextBox_Result.Text == "0")
+                TextBox_Result.Text = "";
+
+            if (button.Text == ".")
+            {
+                if (!TextBox_Result.Text.Contains("."))
+                    TextBox_Result.Text = TextBox_Result.Text + button.Text;
+            }
+            else
+            {
+                TextBox_Result.Text = TextBox_Result.Text + button.Text;
+            }
         }
     }
 }
