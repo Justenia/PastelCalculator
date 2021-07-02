@@ -11,10 +11,12 @@ namespace PastelCalculator
         private String operation = "";
         private  Double value = 0;
         private String value2;
+        bool isOperationPressed = false;
 
         public string Operation { get => operation; set => operation = value; }
         public double Value { get => value; set => this.value = value; }
         public string Value2 { get => value2; set => value2 = value; }
+        public bool IsOperationPressed { get => isOperationPressed; set => isOperationPressed = value; }
 
         public void Operators()
         {

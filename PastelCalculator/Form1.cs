@@ -32,7 +32,7 @@ namespace PastelCalculator
         private void Button_equals_Click(object sender, EventArgs e)
         {
             calc.Value2 = TextBox_Result.Text;
-            lbl_equation.Text = ""; 
+            lbl_equation.Text = "";
             calc.Operators();
             TextBox_Result.Text = calc.Value2;
         }
@@ -54,8 +54,9 @@ namespace PastelCalculator
 
         private void AppendNumValues(object sender)
         {
+            calc.IsOperationPressed = false;
             Button button = (Button)sender;
-            if (TextBox_Result.Text == "0")
+            if ((TextBox_Result.Text == "0") || (calc.IsOperationPressed))
                 TextBox_Result.Text = "";
 
             if (button.Text == ".")
@@ -72,6 +73,7 @@ namespace PastelCalculator
         private void Operation(object sender)
         {
             Button button = (Button)sender;
+            calc.IsOperationPressed = true; 
             calc.Value = Double.Parse(TextBox_Result.Text);
             calc.Operation = button.Text;
             TextBox_Result.Text = "";
