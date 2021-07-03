@@ -13,6 +13,7 @@ namespace PastelCalculator
     public partial class Form1_calculator : Form
     {
         PastelClass calc = new PastelClass();
+        PastelClass2 inherit = new PastelClass2();
 
         public Form1_calculator()
         {

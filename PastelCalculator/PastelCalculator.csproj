@@ -53,6 +53,7 @@
       <DependentUpon>PastelCalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="PastelClass.cs" />
+    <Compile Include="PastelClass2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PastelCalculator.resx">
